@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d490c9c-1742-486a-a9bd-0f973db93f12" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/machine learning.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01-机器学习概述/01-reg_linear.py" afterDir="false" />
+    <list default="true" id="9d490c9c-1742-486a-a9bd-0f973db93f12" name="Changes" comment="线性回归模型预测学生成绩">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-机器学习概述/01-reg_linear.py" beforeDir="false" afterPath="$PROJECT_DIR$/01-机器学习概述/01-reg_linear.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,14 +62,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1756137126743</updated>
-      <workItem from="1756137127775" duration="951000" />
+      <workItem from="1756137127775" duration="1966000" />
     </task>
+    <task id="LOCAL-00001" summary="线性回归模型预测学生成绩">
+      <option name="closed" value="true" />
+      <created>1756138122058</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756138122058</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="线性回归模型预测学生成绩" />
+    <option name="LAST_COMMIT_MESSAGE" value="线性回归模型预测学生成绩" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/machine_learning$01_reg_linear.coverage" NAME="01-reg_linear Coverage Results" MODIFIED="1756137974985" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-机器学习概述" />
+    <SUITE FILE_PATH="coverage/machine_learning$01_reg_linear.coverage" NAME="01-reg_linear Coverage Results" MODIFIED="1756140974330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-机器学习概述" />
   </component>
 </project>
