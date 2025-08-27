@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d490c9c-1742-486a-a9bd-0f973db93f12" name="Changes" comment="鸢尾花识别案例">
-      <change afterPath="$PROJECT_DIR$/02-KNN算法/04-GridSearchCV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-KNN算法/03-iris_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/02-KNN算法/03-iris_demo.py" afterDir="false" />
+    <list default="true" id="9d490c9c-1742-486a-a9bd-0f973db93f12" name="Changes" comment="鸢尾花识别案例 - 交叉验证和网格搜索">
+      <change beforePath="$PROJECT_DIR$/02-KNN算法/04-GridSearchCV.py" beforeDir="false" afterPath="$PROJECT_DIR$/02-KNN算法/04-GridSearchCV.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +39,7 @@
     "Python.02-preprocess_demo.executor": "Run",
     "Python.03-iris_demo.executor": "Run",
     "Python.03-kmeans_demo.executor": "Run",
+    "Python.04-GridSearchCV.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -69,7 +68,7 @@
       <option name="presentableId" value="Default" />
       <updated>1756137126743</updated>
       <workItem from="1756137127775" duration="11248000" />
-      <workItem from="1756318334226" duration="6383000" />
+      <workItem from="1756318334226" duration="6714000" />
     </task>
     <task id="LOCAL-00001" summary="线性回归模型预测学生成绩">
       <option name="closed" value="true" />
@@ -135,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756331915151</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="鸢尾花识别案例 - 交叉验证和网格搜索">
+      <option name="closed" value="true" />
+      <created>1756333424701</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1756333424701</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,13 +157,15 @@
     <MESSAGE value="特征预处理 - 归一化" />
     <MESSAGE value="特征预处理 - 标准化" />
     <MESSAGE value="鸢尾花识别案例" />
-    <option name="LAST_COMMIT_MESSAGE" value="鸢尾花识别案例" />
+    <MESSAGE value="鸢尾花识别案例 - 交叉验证和网格搜索" />
+    <option name="LAST_COMMIT_MESSAGE" value="鸢尾花识别案例 - 交叉验证和网格搜索" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machine_learning$01_KNN_API.coverage" NAME="01-KNN_API Coverage Results" MODIFIED="1756274086546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02-KNN算法" />
     <SUITE FILE_PATH="coverage/machine_learning$02_KNN_demo.coverage" NAME="02-KNN_demo Coverage Results" MODIFIED="1756142611189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-机器学习概述" />
     <SUITE FILE_PATH="coverage/machine_learning$01_reg_linear.coverage" NAME="01-reg_linear Coverage Results" MODIFIED="1756140974330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-机器学习概述" />
     <SUITE FILE_PATH="coverage/machine_learning$02_preprocess_demo.coverage" NAME="02-preprocess_demo Coverage Results" MODIFIED="1756319010417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02-KNN算法" />
+    <SUITE FILE_PATH="coverage/machine_learning$04_GridSearchCV.coverage" NAME="04-GridSearchCV Coverage Results" MODIFIED="1756333394225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02-KNN算法" />
     <SUITE FILE_PATH="coverage/machine_learning$03_kmeans_demo.coverage" NAME="03-kmeans_demo Coverage Results" MODIFIED="1756144320082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-机器学习概述" />
     <SUITE FILE_PATH="coverage/machine_learning$03_iris_demo.coverage" NAME="03-iris_demo Coverage Results" MODIFIED="1756331857471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02-KNN算法" />
   </component>
