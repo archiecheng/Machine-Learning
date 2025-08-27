@@ -10,15 +10,17 @@ x = [[90, 2, 10, 40], [60, 4, 15, 45], [75, 3, 13, 46]]
 """
 
 # 1 导入数据包
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
 
 # 2 获取数据
 x = [[90, 2, 10, 40], [60, 4, 15, 45], [75, 3, 13, 46]]
 
 # 3 实例化模型
-scaler = MinMaxScaler()
+# scaler = MinMaxScaler() # 归一化
+standard_scaler = StandardScaler() # 标准化
+
 
 # 4 特征处理
-res = scaler.fit_transform(x)
-
+# res = scaler.fit_transform(x)
+res = standard_scaler.fit_transform(x)
 print(res)
