@@ -3,7 +3,7 @@ from sklearn.datasets import load_iris
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
@@ -52,20 +52,44 @@ print(f"len(iris_data.data) --> {len(iris_data.data)}")
 # transform -- 无需计算, 根据之前计算的规律, 进行转化
 # estimator.predict() 直接预测结果
 # estimator.predict_proba() 预测概率
-scaler = StandardScaler()
-x_train = scaler.fit_transform(X_train)
-x_test = scaler.fit_transform(X_test)
+pre = StandardScaler()
+x_train = pre.fit_transform(X_train)
+x_test = pre.fit_transform(X_test)
 
 #  4. 模型训练
-model = KNeighborsClassifier(n_neighbors=5)
+model = KNeighborsClassifier(n_neighbors=1)
+estimator = GridSearchCV(model, param_grid={'n_neighbors': [4, 5, 7, 9]}, cv=4)
+estimator.fit(x_train, y_train)
+
+print(estimator.best_score_)
+# print(estimator.best_estimator_)
+# print(estimator.cv_results_)
+
+pd.DataFrame(estimator.cv_results_).to_csv('./grid_search.csv')
+
+model = KNeighborsClassifier(n_neighbors=7)
+
 model.fit(x_train, y_train)
+x = [[5.1, 3.5, 1.4, 0.2]]
+x = pre.transform(x)
+print(model.predict(x))
 
 
-# 5. 模型预测
-# 测试集 accuracy
-acc = model.score(x_test, y_test)
-print(f'测试集acc --> {acc}')
-# 模型预测准确率
-y_pred = model.predict(x_test)
-acc = accuracy_score(y_test, y_pred)
-print(f'acc --> {acc}')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
