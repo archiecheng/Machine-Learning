@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d490c9c-1742-486a-a9bd-0f973db93f12" name="Changes" comment="鸢尾花识别案例 - 交叉验证和网格搜索">
-      <change afterPath="$PROJECT_DIR$/02-KNN算法/05-KNN_Digit.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-KNN算法/demo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-KNN算法/train.csv" afterDir="false" />
+    <list default="true" id="9d490c9c-1742-486a-a9bd-0f973db93f12" name="Changes" comment="KNN 手写数字验证">
+      <change afterPath="$PROJECT_DIR$/03-线性回归/01-LinearRegression API.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03-线性回归/02-Boston.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03-线性回归/03-拟合效果.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04-逻辑回归/01-LR_demo-cancer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04-逻辑回归/02-Class_Metric.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04-逻辑回归/03-Churn_Pred.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +40,7 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.01-KNN_API.executor": "Run",
+    "Python.01-LinearRegression API.executor": "Run",
     "Python.01-reg_linear.executor": "Run",
     "Python.02-KNN_demo.executor": "Run",
     "Python.02-preprocess_demo.executor": "Run",
@@ -80,7 +84,11 @@
       <updated>1756137126743</updated>
       <workItem from="1756137127775" duration="11248000" />
       <workItem from="1756318334226" duration="9271000" />
-      <workItem from="1756339022824" duration="2670000" />
+      <workItem from="1756339022824" duration="3899000" />
+      <workItem from="1756352322218" duration="3173000" />
+      <workItem from="1756486380021" duration="1889000" />
+      <workItem from="1756529090219" duration="685000" />
+      <workItem from="1756574476054" duration="373000" />
     </task>
     <task id="LOCAL-00001" summary="线性回归模型预测学生成绩">
       <option name="closed" value="true" />
@@ -162,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756333731143</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="KNN 手写数字验证">
+      <option name="closed" value="true" />
+      <created>1756341865263</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1756341865263</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +194,8 @@
     <MESSAGE value="特征预处理 - 标准化" />
     <MESSAGE value="鸢尾花识别案例" />
     <MESSAGE value="鸢尾花识别案例 - 交叉验证和网格搜索" />
-    <option name="LAST_COMMIT_MESSAGE" value="鸢尾花识别案例 - 交叉验证和网格搜索" />
+    <MESSAGE value="KNN 手写数字验证" />
+    <option name="LAST_COMMIT_MESSAGE" value="KNN 手写数字验证" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machine_learning$01_KNN_API.coverage" NAME="01-KNN_API Coverage Results" MODIFIED="1756274086546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02-KNN算法" />
