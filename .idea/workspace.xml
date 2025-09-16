@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d490c9c-1742-486a-a9bd-0f973db93f12" name="Changes" comment="Adaboost葡萄酒案例实现">
-      <change afterPath="$PROJECT_DIR$/06-集成学习/03-GBDT.py" afterDir="false" />
+    <list default="true" id="9d490c9c-1742-486a-a9bd-0f973db93f12" name="Changes" comment="Adaboost葡萄酒案例实现-新增交叉验证和网格搜索">
+      <change afterPath="$PROJECT_DIR$/06-集成学习/04-XGBoost.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-集成学习/winequality-red.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +52,7 @@
     "Python.03-kmeans_demo.executor": "Run",
     "Python.03-拟合效果.executor": "Run",
     "Python.04-GridSearchCV.executor": "Run",
+    "Python.04-XGBoost.executor": "Run",
     "Python.05-KNN_Digit.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -96,7 +98,8 @@
       <workItem from="1756574476054" duration="8065000" />
       <workItem from="1756940040140" duration="5395000" />
       <workItem from="1757020149946" duration="3312000" />
-      <workItem from="1757131160958" duration="7328000" />
+      <workItem from="1757131160958" duration="11210000" />
+      <workItem from="1758059381041" duration="4193000" />
     </task>
     <task id="LOCAL-00001" summary="线性回归模型预测学生成绩">
       <option name="closed" value="true" />
@@ -258,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757178125328</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Adaboost葡萄酒案例实现-新增交叉验证和网格搜索">
+      <option name="closed" value="true" />
+      <created>1757203662602</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1757203662602</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,17 +295,19 @@
     <MESSAGE value="泰坦尼克号生存预测" />
     <MESSAGE value="随机森林实现" />
     <MESSAGE value="Adaboost葡萄酒案例实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adaboost葡萄酒案例实现" />
+    <MESSAGE value="Adaboost葡萄酒案例实现-新增交叉验证和网格搜索" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adaboost葡萄酒案例实现-新增交叉验证和网格搜索" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/machine_learning$02_Adaboost.coverage" NAME="02-Adaboost Coverage Results" MODIFIED="1757178099136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06-集成学习" />
     <SUITE FILE_PATH="coverage/machine_learning$02_Class_Metric.coverage" NAME="02-Class_Metric Coverage Results" MODIFIED="1756944553383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/04-逻辑回归" />
     <SUITE FILE_PATH="coverage/machine_learning$03_.coverage" NAME="03-拟合效果 Coverage Results" MODIFIED="1756923572387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03-线性回归" />
-    <SUITE FILE_PATH="coverage/machine_learning$03_GBDT.coverage" NAME="03-GBDT Coverage Results" MODIFIED="1757203091264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06-集成学习" />
+    <SUITE FILE_PATH="coverage/machine_learning$03_GBDT.coverage" NAME="03-GBDT Coverage Results" MODIFIED="1757203616057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06-集成学习" />
     <SUITE FILE_PATH="coverage/machine_learning$01_titanic.coverage" NAME="01-titanic Coverage Results" MODIFIED="1757042633922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/05-决策树" />
     <SUITE FILE_PATH="coverage/machine_learning$02_preprocess_demo.coverage" NAME="02-preprocess_demo Coverage Results" MODIFIED="1756319010417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02-KNN算法" />
     <SUITE FILE_PATH="coverage/machine_learning$04_GridSearchCV.coverage" NAME="04-GridSearchCV Coverage Results" MODIFIED="1756333698876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02-KNN算法" />
     <SUITE FILE_PATH="coverage/machine_learning$02_Boston.coverage" NAME="02-Boston Coverage Results" MODIFIED="1756922464518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03-线性回归" />
+    <SUITE FILE_PATH="coverage/machine_learning$04_XGBoost.coverage" NAME="04-XGBoost Coverage Results" MODIFIED="1758063315612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/06-集成学习" />
     <SUITE FILE_PATH="coverage/machine_learning$01_KNN_API.coverage" NAME="01-KNN_API Coverage Results" MODIFIED="1756274086546" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/02-KNN算法" />
     <SUITE FILE_PATH="coverage/machine_learning$01_LinearRegression_API.coverage" NAME="01-LinearRegression API Coverage Results" MODIFIED="1756574929911" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/03-线性回归" />
     <SUITE FILE_PATH="coverage/machine_learning$02_KNN_demo.coverage" NAME="02-KNN_demo Coverage Results" MODIFIED="1756142611189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/01-机器学习概述" />
